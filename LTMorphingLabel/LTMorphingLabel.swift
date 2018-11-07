@@ -83,7 +83,7 @@ typealias LTMorphingSkipFramesClosure =
     @IBInspectable open var morphingEnabled: Bool = true
 
     @IBOutlet open weak var delegate: LTMorphingLabelDelegate?
-    open var morphingEffect: LTMorphingEffect = .scale
+    @IBInspectable open var morphingEffect: LTMorphingEffect = .scale
     
     var startClosures = [String: LTMorphingStartClosure]()
     var effectClosures = [String: LTMorphingEffectClosure]()
